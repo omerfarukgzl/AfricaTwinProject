@@ -5,3 +5,4 @@
 * Gerekli veri girişi kontolleri eklendi.
 * Uyarı Mesajları Animasyonları eklendi.
 * Uygulama clean architecture yapılmaya çalışıldı.
+----------------------------------------------------
