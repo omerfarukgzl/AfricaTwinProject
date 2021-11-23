@@ -12,3 +12,4 @@
 * Konum izni eklendi.
 * Map kullanıcılarının MapsUsers class'ından alınan bilgilere göre harita üzerinde konumu ve içeriği görüntülendi.
 * Konum takibi yapıldı.
+* Uygulama clean architecture yapılmaya çalışıldı.
