@@ -8,7 +8,7 @@
 * Uygulama clean architecture yapılmaya çalışıldı.
 ## 2.Bölüm
 * Saplash Screen tasarlandı.
-* Maps ekranı tasarlandı.
+* Maps Screen tasarlandı.
 * Konum izni eklendi.
 * Map kullanıcılarının MapsUsers class'ından alınan bilgilere göre harita üzerinde konumu ve içeriği görüntülendi.
 * Konum takibi yapıldı.
