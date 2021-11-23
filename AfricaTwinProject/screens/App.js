@@ -1,7 +1,8 @@
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import React, { useState } from 'react';
+import SplashScreen from 'react-native-splash-screen'
+import React, { useEffect, useState } from 'react';
 import {
   Text,
   TextInput,
@@ -13,13 +14,19 @@ import {
 
 import SignIn from './SignIn/SignInView';
 import SignUp from './SignUp/SignUpVİews';
-import Maps from './Maps';
+import Maps from './Maps/MapsView';
+
 
 
 const Stack = createNativeStackNavigator();
 
+
 const App = () => {
 
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
+  
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown:false}} >

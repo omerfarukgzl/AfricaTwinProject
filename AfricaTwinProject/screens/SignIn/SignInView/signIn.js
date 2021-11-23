@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, TouchableOpacity, } from "react-native";
 import styles from './signIn.styles';
-import Users from '../../../Users';
+import Users from '../../../RegisteredUsers';
 import { CheckDataWarning } from "../SignInWarning/checkDataWarning";
 
 
@@ -14,6 +14,7 @@ const SignIn = (props) => {
 
   const [checkEmail, setcheckEmail] = useState(false);
   const [checkPassword, setcheckPassword] = useState(false);
+  let userID = Number;
 
   useEffect(() => {
     setCheckRegisteredUser(false);
@@ -24,7 +25,7 @@ const SignIn = (props) => {
   };
 
   function NavigateToMaps() {
-    props.navigation.navigate('Maps', { user: users });
+    props.navigation.navigate('Maps', { user: users[userID]});
   };
 
   function ControlEmtpy() {
@@ -51,7 +52,11 @@ const SignIn = (props) => {
 
     users.forEach((item) => {
       if ((item.username === username) && (item.password === password))
+      {
         isRegistired = true;
+        userID = item.id;
+      }
+       
       else
         setCheckRegisteredUser(true);
 
